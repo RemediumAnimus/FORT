@@ -1,0 +1,7 @@
+{
+    "name": "PROJECT",
+    "dependencies": {
+       "foundation": "*",
+       "slick.js": "*"
+    }
+}
