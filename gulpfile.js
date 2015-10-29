@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 
 var path = {
 	build: {
-		html: '../fort-gh-pages',
+		html: '../FORT',
 		css: 'css/'
 	},
 	src: {

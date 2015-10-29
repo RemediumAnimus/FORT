@@ -6,9 +6,11 @@ $tmp-path: '../img/tmp';
 
 $min-width: 500px;
 $mobile-width: 770px;
-$small-width: 938px;
+$small-width: 960px;
 $medium-width: 1140px;
 $max-width: 1260px;
+
+$cat-maxw: 1330px;
 
 $red: #8d0d0b;
 
@@ -1908,7 +1910,7 @@ h1 {
 			top: 0;
 			left: 0;
 		}
-	}
+	}//banner
 }
 
 .addresses {
@@ -2596,10 +2598,24 @@ h1 {
   }
 
   &__banner {
-    margin: 0px -10px 0px -10px;
+    margin: 25px -10px 0px -10px;
+    clear: both;
+
+    img {
+      display: block;
+      width: 100%;
+    }
 
     @media all and (min-width: $mobile-width) {
       margin: 25px 0px 25px 0px;
+    }
+
+    &--nm {
+      margin: 0 -10px 0 -10px;
+
+      @media all and (min-width: $mobile-width) {
+        margin: 0;
+      }
     }
   }
 
@@ -2632,12 +2648,13 @@ h1 {
       display: block;
       position: relative;
       width: 215px;
-      margin: 0;
+      margin: 0px;
+      margin-left: 10px;
     }
 
     @media all and (min-width: $medium-width) {
       width: 294px;
-      margin-left: 0;
+      margin-left: 10px;
     }
 
     &:after {
@@ -3332,7 +3349,7 @@ h1 {
 
       &--hide {
         display: none;
-        @media all and (min-width: $small-width) {
+        @media all and (min-width: $min-width) {
           display: block;
         }
       }
@@ -3424,7 +3441,7 @@ h1 {
       padding-right: 0px;
 
       @media all and (min-width: $max-width) {
-        padding-right: 90px;
+        //padding-right: 90px;
       }
     }
 
@@ -3433,15 +3450,21 @@ h1 {
       font-size: 12px;
       color: #333333;
       position: relative;
-      margin-bottom: 27px;
+      margin-bottom: 20px;
       margin-top: -12px;
       margin-right: 40px;
 
-      @media all and (min-width: $min-width) {
+      @media all and (min-width: $mobile-width) {
+        margin-top: -28px;
+        margin-bottom: 0px;
+      }
+
+      @media all and (min-width: $medium-width) {
         font-size: 14px;
         margin-top: 0;
         margin-right: 0;
-        margin-bottom: 17px;
+        margin-bottom: 0px;
+        margin-top: -28px;
       }
 
       span {
@@ -3610,6 +3633,10 @@ h1 {
       padding-top: 15px;
       position: relative;
       padding-bottom: 13px;
+
+     &--margin {
+       margin-bottom: 15px;
+     }
 
       @media all and (min-width: $min-width) {
         padding-bottom: 0;
@@ -3848,6 +3875,17 @@ h1 {
           }
         }
       }//active
+
+      .active2 {
+
+        a {
+          background: $red;
+
+          &:after {
+              background: url("#{$img-path}/filter2.png") 0px 0px;
+          }
+        }
+      }//active
     }//filter
 
     &__items {
@@ -3873,6 +3911,10 @@ h1 {
         position: relative;
         padding-bottom: 20px;
 
+        &:after {
+          @include clear;
+        }
+
         @media all and (min-width: $min-width) {
           padding-bottom: 30px;
         }
@@ -3880,10 +3922,6 @@ h1 {
         @media all and (min-width: $small-width) {
           padding-bottom: 0;
           margin-bottom: 60px;
-        }
-
-        &:after {
-          @include clear;
         }
 
         @media all and (min-width: $small-width) {
@@ -3994,7 +4032,7 @@ h1 {
             width: auto;
             float: none;
           }
-        }//second-block
+        }//fouth-block
 
         &__container {
           width: auto;
@@ -4380,12 +4418,12 @@ h1 {
              display: table-cell;
              vertical-align: middle;
              color: #fff;
-             line-height: 16px;
-             padding-left: 55px;
-             padding-right: 10px;
              position: relative;
              text-decoration: none;
+             padding-left: 55px;
+             padding-right: 10px;
              font-size: 18px;
+             line-height: 16px;
 
              @media all and (min-width: $min-width) {
                font-size: 12px;
@@ -4404,13 +4442,13 @@ h1 {
              &:before {
                display: block;
                content: '';
-               width: 21px;
-               height: 30px;
                background: url("#{$img-path}/hand.png") no-repeat;
                background-size: contain;
                position: absolute;
                left: 16px;
                top: 2px;
+               width: 21px;
+               height: 30px;
 
                @media all and (min-width: $min-width) {
                  width: 15px;
@@ -4455,9 +4493,9 @@ h1 {
              text-decoration: none;
              display: table-cell;
              vertical-align: middle;
-             padding-left: 50px;
              position: relative;
              font-size: 18px;
+             padding-left: 50px;
 
              @media all and (min-width: $min-width) {
                font-size: 12px;
@@ -4472,13 +4510,13 @@ h1 {
              &:after {
                display: block;
                content: '';
-               width: 30px;
-               height: 29px;
                background: url("#{$img-path}/cab.png") no-repeat;
                background-size: contain;
                position: absolute;
                left: 10px;
                top: 5px;
+               width: 30px;
+               height: 29px;
 
                @media all and (min-width: $min-width) {
                  width: 19px;
@@ -4529,8 +4567,6 @@ h1 {
              &:after {
                display: block;
                content: '';
-               width: 30px;
-               height: 29px;
                background: url("#{$img-path}/cab.png") no-repeat;
                background-size: contain;
                position: absolute;
@@ -4538,6 +4574,8 @@ h1 {
                right: 0;
                margin: auto;
                top: 3px;
+               width: 30px;
+               height: 29px;
 
                @media all and (min-width: $min-width) {
                  width: 19px;
@@ -4617,7 +4655,485 @@ h1 {
            }
          }
         }//buy
+
+        &--list {
+          width: 100%;
+          float: none;
+          margin-bottom: 10px;
+          padding-bottom: 0;
+
+          @media all and (max-width: $small-width) {
+           padding-bottom: 30px;
+          }
+
+          .n-main__catalog__items__item__container {
+            width: auto;
+            float: none !important;
+          }
+
+          .n-main__catalog__items__item__pic {
+            float: left;
+            width: 30%;
+            text-align: left;
+            display: block;
+
+            @media all and (max-width: $small-width) {
+              display: none;
+            }
+
+            img {
+              display: block;
+              margin: 0;
+            }
+
+            &--mod {
+
+              img {
+                width: auto;
+                height: auto;
+                width: 90%;
+              }
+            }
+          }
+
+          .n-main__catalog__items__item__first-block {
+            width: 23%;
+            float: left;
+
+            @media all and (max-width: $small-width) {
+              width: 34%;
+            }
+
+            @media all and (max-width: $mobile-width) {
+              width: 39%;
+            }
+
+            @media all and (max-width: $min-width) {
+              width: 65%;
+            }
+
+            .n-main__catalog__items__item__name {
+              span {
+                @media all and (max-width: $cat-maxw) {
+                  font-size: 18px;
+                }
+                @media all and (max-width: $min-width) {
+                  font-size: 21px;
+                }
+              }
+            }
+
+            .n-main__catalog__items__item__post {
+              a {
+                @media all and (max-width: $min-width) {
+                  font: 14px $font-myriad-cond;
+                  font-style: italic;
+                  line-height: 14px;
+                }
+              }
+            }
+
+            .n-main__catalog__items__item__city {
+              margin: 30px 0px;
+              margin-bottom: 20px;
+
+              @media all and (max-width: $cat-maxw) {
+               height: 24px;
+               margin-bottom: 20px;
+               margin-top: 20px;
+              }
+
+              @media all and (max-width: $min-width) {
+                height: 26px;
+                margin: 10px 0px;
+              }
+
+              span {
+                @media all and (max-width: $cat-maxw) {
+                  font-size: 12px;
+                }
+
+                @media all and (max-width: $min-width) {
+                  font-size: 14px;
+                }
+              }
+            }
+
+          }//first-block
+
+          .n-main__catalog__items__item__second-block {
+            width: 22%;
+            float: left;
+            text-align: center;
+
+            @media all and (max-width: $small-width) {
+              width: 30%;
+            }
+
+            @media all and (max-width: $mobile-width) {
+              width: 20%;
+            }
+
+            @media all and (max-width: $min-width) {
+              width: 35%;
+              float: right;
+              text-align: right;
+            }
+
+            &__container {
+              margin: 0px auto;
+              display: inline-block;
+            }
+
+            .n-main__catalog__items__item__vol {
+              margin-bottom: 5px;
+
+              @media all and (max-width: $small-width) {
+                width: 90px;
+              }
+
+              @media all and (max-width: $min-width) {
+               margin-bottom: 12px;
+              }
+
+              img {
+                height: 24px;
+              }
+
+              img {
+                @media all and (max-width: $cat-maxw) {
+                  height: 17px;
+                }
+
+                @media all and (max-width: $min-width) {
+                  height: 24px;
+                  width: auto;
+                }
+              }
+
+              span {
+                @media all and (max-width: $cat-maxw) {
+                  font-size: 12px;
+                  line-height: 15px;
+                }
+
+                @media all and (max-width: $min-width) {
+                  font-size: 14px;
+                }
+              }
+            }
+
+            .n-main__catalog__items__item__fruit {
+              span {
+                @media all and (max-width: $cat-maxw) {
+                  font-size: 12px;
+                  line-height: 22px;
+                }
+
+                @media all and (max-width: $min-width) {
+                 font-size: 14px;
+                }
+              }
+
+              img {
+                @media all and (max-width: $cat-maxw) {
+                  height: 17px;
+                }
+
+                @media all and (max-width: $min-width) {
+                 height: 20px;
+                 width: auto;
+                }
+              }
+            }
+          }//second-block
+
+          .n-main__catalog__items__item__third-block {
+            width: 25%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            @media all and (max-width: $mobile-width) {
+              width: 39%;
+            }
+
+            @media all and (max-width: $small-width) {
+              width: 34%;
+            }
+
+            @media all and (max-width: $min-width) {
+              width: 65%;
+              position: static;
+            }
+
+            .n-main__catalog__items__item__href {
+              float: right;
+              margin-top: 0;
+              margin-bottom: 20px;
+              a {
+                  @media all and (max-width: $cat-maxw) {
+                    font-size: 12px;
+                    padding-left: 20px;
+                  }
+
+                  @media all and (max-width: $min-width) {
+                    font-size: 14px;
+                  }
+
+                  &:before {
+                    @media all and (max-width: $cat-maxw) {
+                      width: 13px;
+                      height: 13px;
+                    }
+                  }
+               }
+            }
+
+            .n-main__catalog__items__item__cost {
+              span {
+                @media all and (max-width: $cat-maxw) {
+                  font-size: 18px;
+                }
+
+                @media all and (max-width: $min-width) {
+                   font-size: 21px;
+                }
+              }
+            }
+
+            .n-main__catalog__items__item__cost {
+              float: left;
+              margin-top: 0;
+              margin-bottom: 10px;
+            }
+          }//third-block
+
+          .n-main__catalog__items__item__fouth-block {
+            width: 25%;
+            float: left;
+            margin-top: 5px;
+
+            @media all and (max-width: $small-width) {
+              width: 36%;
+            }
+
+            @media all and (max-width: $mobile-width) {
+              width: 41%;
+            }
+
+            @media all and (max-width: $min-width) {
+              width: 100%;
+              float: none;
+            }
+
+
+            .n-main__catalog__items__item__stat {
+              @media all and (max-width: $cat-maxw) {
+                line-height: 3px;
+              }
+              span {
+                @media all and (max-width: $cat-maxw) {
+                  font-size: 12px;
+                  line-height: 12px;
+                }
+
+                @media all and (max-width: $min-width) {
+                  font-size: 18px;
+                  line-height: 20px;
+                }
+              }
+            }
+
+            .n-main__catalog__items__item__buy {
+              @media all and (max-width: $cat-maxw) {
+               height: 26px;
+              }
+
+              @media all and (max-width: $min-width) {
+                height: 40px;
+              }
+            }
+
+            .n-main__catalog__items__item__buy__button-b {
+              @media all and (max-width: $cat-maxw) {
+               width: 85px;
+              }
+
+              @media all and (max-width: $min-width) {
+                width: 140px;
+              }
+              a {
+                @media all and (max-width: $cat-maxw) {
+                  font-size: 12px;
+                  line-height: 12px;
+                  padding-left: 30px;
+                }
+
+                @media all and (max-width: $min-width) {
+                  padding-left: 55px;
+                  padding-right: 10px;
+                  font-size: 18px;
+                  line-height: 16px;
+                }
+
+                &:before {
+                  @media all and (max-width: $cat-maxw) {
+                    width: 15px;
+                    height: 22px;
+                  }
+
+                  @media all and (max-width: $min-width) {
+                    left: 16px;
+                    top: 2px;
+                    width: 21px;
+                    height: 30px;
+                  }
+                }
+              }
+            }
+
+            .n-main__catalog__items__item__buy__bucket {
+              @media all and (max-width: $cat-maxw) {
+               width: 85px;
+              }
+
+              @media all and (max-width: $min-width) {
+                width: 150px;
+              }
+              a {
+                @media all and (max-width: $cat-maxw) {
+                  font-size: 12px;
+                  line-height: 12px;
+                  padding-left: 30px;
+                }
+
+                @media all and (max-width: $min-width) {
+                  font-size: 18px;
+                  padding-left: 50px;
+                }
+
+                &:after {
+                  @media all and (max-width: $cat-maxw) {
+                    width: 19px;
+                    height: 17px;
+                  }
+
+                  @media all and (max-width: $min-width) {
+                    left: 10px;
+                    top: 5px;
+                    width: 30px;
+                    height: 29px;
+                  }
+                }
+              }
+            }
+
+            .n-main__catalog__items__item__buy__count {
+              @media all and (max-width: $cat-maxw) {
+               width: 85px;
+              }
+
+              @media all and (max-width: $min-width) {
+                width: 150px;
+              }
+
+              &__bucket {
+
+                &:after {
+                  @media all and (max-width: $cat-maxw) {
+                    width: 19px;
+                    height: 17px;
+                  }
+
+                  @media all and (max-width: $min-width) {
+                    top: 3px;
+                    width: 30px;
+                    height: 29px;
+                  }
+                }
+              }
+
+              &__field {
+                @media all and (max-width: $cat-maxw) {
+                  span {
+                    font-size: 12px;
+                  }
+                }
+
+                @media all and (max-width: $min-width) {
+                  span {
+                    font-size: 18px;
+                  }
+                }
+              }
+
+              &__ok {
+                @media all and (max-width: $cat-maxw) {
+                  a {
+                    font-size: 12px;
+                  }
+                }
+
+                @media all and (max-width: $min-width) {
+                  a {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }//fouth-block
+        }//list
       }//item
     }//items
   }//catalog
+
+  &__menu {
+    padding-top: 22px;
+    ul {
+      margin-left: 0;
+      &:after {
+        @include clear;
+      }
+    }//ul
+
+    &__item {
+      width: 50%;
+      float: left;
+      list-style: none;
+      text-align: center;
+      margin-bottom: 14px;
+
+      @media all and (min-width: $min-width) {
+        width: 25%;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: #333333;
+        font-size: 16px;
+
+        @media all and (min-width: $medium-width) {
+          font-size: 18px;
+        }
+      }
+
+      &__cell {
+        display: table;
+        width: 100%;
+        text-align: center;
+        height: 46px;
+      }
+
+      &__pic {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }//item
+
+    &--margin {
+      margin-bottom: -20px;
+    }
+  }//menu
 }//n-main
