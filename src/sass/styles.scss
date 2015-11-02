@@ -4168,6 +4168,15 @@ h1 {
         margin-bottom: 14px;
         position: relative;
         padding-bottom: 20px;
+        height: auto;
+
+        @media all and (min-width: $small-width) {
+          height: 513px;
+        }
+
+         @media all and (min-width: $medium-width) {
+          height: 685px;
+        }
 
         &:after {
           @include clear;
@@ -4919,6 +4928,7 @@ h1 {
           float: none;
           margin-bottom: 10px;
           padding-bottom: 0;
+          height: auto;
 
           @media all and (max-width: $small-width) {
            padding-bottom: 30px;
