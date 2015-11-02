@@ -1,0 +1,383 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="fonts/MyriadPro/MyriadPro.css">
+	<link rel="stylesheet" href="css/foundation-custom.css">
+	<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css">
+	<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.css">
+	<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.skinHTML5.css">
+	<link rel="stylesheet" href="bower_components/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="bower_components/magnific-popup/magnific-popup.min.css">
+	<link rel="stylesheet" href="bower_components/magnific-popup/animations.css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+
+<div id="mobile-indicator"></div>
+<div id="medium-indicator"></div>
+
+<div class="page">
+
+	<div class="header">
+		<div class="contain-to-grid contain-to-grid--mod">
+		    <div class="header__search header__search--mod header__search--mob">
+               <form action="">
+                   <input type="text">
+                   <button>
+                       Найти
+                   </button>
+               </form>
+            </div>
+			<nav class="top-bar" data-topbar data-options="custom_back_text: false;" role="navigation">
+				<ul class="title-area title-area--mod">
+					<li class="name">
+						<h1>
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+						</h1>
+					</li>
+					<li class="toggle-topbar menu-icon">
+						<a href="#">
+							<span></span>
+						</a>
+					</li>
+				</ul>
+				<div class="header__search header__search--mod">
+					<form action="">
+						<input type="text" placeholder="Поиск">
+						<button>
+							Найти
+						</button>
+					</form>
+				</div>
+				<section class="top-bar-section top-bar-section--mod">
+					<ul class="right">
+						<li>
+							<a href="#" class="n-header-bold"><span>Компания</span></a>
+						</li>
+						<li><a href="#" class="n-header-bold">Ацкии</a></li>
+						<li>
+							<a href="#" class="n-header-bold"><span>Вино</span></a>
+						</li>
+						<li><a href="#" class="n-header-bold">Игристые вина</a></li>
+						<li><a href="#" class="n-header-bold">Крепкий алкоголь</a></li>
+						<li><a href="#" class="n-header-bold">Вода</a></li>
+						<li class="n-header__cab">
+						    <div class="n-header__cab__container">
+						        <span class="n-header__cab__hello">Привет,</span>
+						        <span class="n-header__cab__name">Василий</span>
+						        <div class="n-header__cab__bttn">
+						            <span>выход</span>
+						        </div>
+						    </div>
+						</li>
+						<li class="n-header__bucket"><a href="#">
+						    <span>80 шт</span>
+						</a></li>
+					</ul>
+				</section>
+			</nav>
+		</div>
+	</div>
+
+	<div class="content">
+
+<div class="row n-main n-main--bucket">
+
+    <a class="n-main__catalog__pdfbutton n-main__catalog__pdfbutton--hide" href="#">
+       <span>Сохранить страницу</span>
+    </a>
+
+    <div class="n-main__sidebar">
+
+        <div class="n-main__sidebar__container">
+
+            <ul class="n-main__sidebar__menu">
+            	<li><a href="#">История заказов</a></li>
+            	<li><a href="#">Адреса доставки</a></li>
+            	<li><a href="#">Способы оплаты</a></li>
+            </ul>
+
+            <div class="n-main__sidebar__data">
+
+                <div class="n-main__sidebar__data__name"><span>Василий Арсентьев</span></div>
+                <div class="n-main__sidebar__data__f"><span>8 (495) 775-14-14<a href="#">изменить</a></span></div>
+                <div class="n-main__sidebar__data__f"><span>fort@fortltd.ru<a href="#">изменить</a></span></div>
+
+            </div>
+            <!-- /.n-main__sidebar__data -->
+
+        </div>
+        <!-- /.n-main__sidebar__container -->
+
+    </div>
+    <!-- /.n-main__sidebar -->
+
+    <div class="n-main__wrap">
+
+        <div class="n-main__wrap__container">
+
+            <a class="n-main__catalog__pdfbutton n-main__catalog__pdfbutton--mod n-main__catalog__pdfbutton--mod--hide" href="#">
+                <span>Сохранить страницу</span>
+            </a>
+
+            <div class="n-main__wrap__bucket">
+                <div class="n-main__wrap__bucket__container">
+                    <div class="n-main__wrap__bucket__header">
+                        <div class="n-main__wrap__bucket__header__container">
+                            <div class="n-main__wrap__bucket__header__row">
+                                <div class="n-main__wrap__bucket__header__col n-main__wrap__bucket__header__col--first">
+                                    Ваша корзина
+                                </div>
+                                <div class="n-main__wrap__bucket__header__col n-main__wrap__bucket__header__col--second">
+                                    <div class="n-main__wrap__bucket__header__col--second__ch">Выбрать скидку</div>
+                                    <div class="n-main__wrap__bucket__header__col--second__select">
+                                        <select id="n-perSelect">
+                                            <option>15%</option>
+                                            <option>20%</option>
+                                            <option>25%</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="n-main__wrap__bucket__header__col n-main__wrap__bucket__header__col--third">
+                                    <div class="n-main__catalog__filter__col n-main__catalog__filter__col--filter1 n-main__catalog__filter__col--filter1--active"><a href="#"><span></span></a></div>
+                                    <div class="n-main__catalog__filter__col n-main__catalog__filter__col--filter2"><a href="#"><span></span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="n-main__wrap__bucket__wrap">
+                        <div class="n-main__wrap__bucket__wrap__row">
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--first"><img src="img/tmp/cub1.png" alt="#" /></div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--second"><a href="#">Ascevi - Luwa Collio DOC Ronco dei Sassi</a></div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--third">2 шт</div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--fouth">6 152 <span class="price">&#8381;</span></div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--fifth">12 304 <span class="price">&#8381;</span></div>
+                        </div>
+                        <!-- /.n-main__wrap__bucket__wrap__row -->
+                         <div class="n-main__wrap__bucket__wrap__row">
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--first"><img src="img/tmp/cub1.png" alt="#" /></div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--second"><a href="#">Ascevi - Luwa Collio DOC Ronco dei Sassi</a></div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--third">2 шт</div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--fouth">6 152 <span class="price">&#8381;</span></div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--fifth">12 304 <span class="price">&#8381;</span></div>
+                        </div>
+                        <!-- /.n-main__wrap__bucket__wrap__row -->
+                         <div class="n-main__wrap__bucket__wrap__row">
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--first"><img src="img/tmp/cub1.png" alt="#" /></div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--second"><a href="#">Ascevi - Luwa Collio DOC Ronco dei Sassi</a></div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--third">2 шт</div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--fouth">6 152 <span class="price">&#8381;</span></div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--fifth">12 304 <span class="price">&#8381;</span></div>
+                        </div>
+                        <!-- /.n-main__wrap__bucket__wrap__row -->
+                    </div>
+                    <!-- /.n-main__wrap__bucket__wrap -->
+
+                    <div class="n-main__wrap__bucket__summ">
+
+                        <div class="n-main__wrap__bucket__wrap__row">
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--first"></div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--second n-main__wrap__bucket__wrap__cell--second--mod"></div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--third n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--third--mod ">
+                                <div class="n-main__wrap__bucket__summ__l">
+                                    <span><b>Итого:</b> 15 шт</span>
+                                </div>
+                            </div>
+                            <div class="n-main__wrap__bucket__wrap__cell n-main__wrap__bucket__wrap__cell--fifth">
+                                <div class="n-main__wrap__bucket__summ__r">
+                                    <div class="n-main__wrap__bucket__summ__r__f">33 658 <span class="price">&#8381;</span></div>
+                                    <div class="n-main__wrap__bucket__summ__r__s">Ваша скидка: 15%</div>
+                                    <div class="n-main__wrap__bucket__summ__r__t">28 658 <span class="price">&#8381;</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.n-main__wrap__bucket__wrap__row -->
+
+                    </div>
+                    <!-- /.n-main__wrap__bucket__summ -->
+
+                    <a href="#n-pop-up-order" class="n-main__wrap__bucket__order">
+                        Оформить
+                    </a>
+
+                </div>
+                <!-- /.n-main__wrap__bucket__container -->
+
+            </div>
+            <!-- /.n-main__wrap__bucket__container -->
+
+        </div>
+        <!-- /.n-main__wrap__container -->
+
+    </div>
+    <!-- /.n-main__wrap -->
+
+    <div class="n-main__sidebar__manager">
+
+        <div class="n-main__sidebar__manager__left">
+
+            <div class="n-main__sidebar__manager__present">
+                <div class="n-main__sidebar__manager__present__pic">
+                    <img src="img/tmp/manager.png" alt="#" />
+                </div>
+                <div class="n-main__sidebar__manager__present__data">
+                    <a href="#">сменить менеджера</a>
+                    <p>ваш персональный менеджер</p>
+                    <h3>Елена</h3>
+                    <div class="status">
+                        <span>Online</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.n-main__sidebar__manager__present -->
+
+            <div class="n-main__sidebar__manager__contacts">
+                <span><b>Телефон:</b> +7 (495) 775-14-14</span>
+                <span><b>Добавочный:</b> 987</span>
+                <span><b>E-mail:</b> fort@fortltd.ru</span>
+            </div>
+
+        </div>
+        <!-- /.n-main__sidebar__manager__left -->
+
+        <div class="n-main__sidebar__manager__right">
+
+            <form>
+                <textarea placeholder="введите сообщение"></textarea>
+                <div class="n-main__sidebar__manager__button">
+                    <span><p>Отправить</p></span>
+                    <input type="submit">
+                </div>
+            </form>
+
+        </div>
+        <!-- /.n-main__sidebar__manager__right -->
+
+    </div>
+    <!-- /.n-main__sidebar__manager -->
+
+    <div class="n-pop-up-done zoom-anim-dialog mfp-hide" id="n-pop-up-done">
+
+        <div class="n-pop-up-done__container">
+            <div class="n-close n-close--bttn"><img src="img/close.png" alt="" /></div>
+            <h3 class="n-pop-up-done__header">Заказ успешно сформирован</h3>
+            <img src="img/pop.png" alt="" />
+            <span>Ваш менеджер свяжется с вами
+            для уточнения подробностей</span>
+            <a class='n-close--bttn'>Ок</a>
+        </div>
+
+    </div>
+    <!-- /.n-pop-up-done -->
+
+    <div class="n-pop-up-order zoom-anim-dialog mfp-hide" id="n-pop-up-order">
+
+        <div class="n-pop-up-order__container">
+            <div class="n-close n-close--bttn"><img src="img/close.png" alt="" /></div>
+            <h3 class="n-pop-up-done__header">Оформление заказа</h3>
+            <div class="n-pop-up-order__contacts">
+                <div class="n-pop-up-order__name">Арсентьев Василий</div>
+                <div class="n-pop-up-order__tel"><a href="#">изменить</a><span>+7 (903) 785-66-52</span></div>
+                <div class="n-pop-up-order__tel"><a href="#">изменить</a><span>geyzerrr@mail.ru</span></div>
+            </div>
+
+            <form class="rf">
+                <div class="n-pop-up-order__field">
+                    <label>Адрес доставки:</label>
+                    <div class="n-pop-up-order__field__box n-pop-up-order__field__box--first">
+                        <select id="select-street">
+                            <option>ул. Новинки, д.13</option>
+                            <option>ул. Новинки, д.13</option>
+                            <option>ул. Новинки, д.13</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="n-pop-up-order__field">
+                    <label>Форма оплаты:</label>
+                    <div class="n-pop-up-order__field__box n-pop-up-order__field__box--second">
+                        <select id="select-buy">
+                            <option>Наличными при получении</option>
+                            <option>Наличными при получении</option>
+                            <option>Наличными при получении</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="n-pop-up-order__field">
+                    <label>Примечания</label>
+                        <textarea></textarea>
+                </div>
+
+                <input type="submit" value="Оформить">
+                <div class="clear"></div>
+            </form>
+        </div>
+
+    </div>
+    <!-- /.n-pop-up-order -->
+
+</div>
+
+	</div>
+
+	<div class="footer">
+		<div class="row">
+			<div class="small-4 medium-2 columns n-footer__col1">
+				<div class="footer__logo">
+					<a href="#">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="small-2 columns show-for-large-up n-footer__col2">
+				Виноторговая <br>
+				компания <br>
+				«Форт»
+			</div>
+			<div class="small-8 medium-7 large-3 columns n-footer__col3">
+				<span class="icon icon--address n-footer__col3__icon"></span> 115230 Москва, Варшавское шоссе, д. 36, корп. 1 <br>
+				<span class="icon icon--phone n-footer__col3__icon"></span> +7 495 775 14 14 <br>
+				<span class="icon icon--email n-footer__col3__icon"></span> <a href="mailto:fort@fortltd.ru">fort@fortltd.ru</a>
+			</div>
+			<div class="small-2 columns show-for-large-up n-footer__col4">
+				<a href="#">Контакты</a><br>
+				<a href="#">Схемы проезда</a><br>
+				<a href="#">Юридическая информация</a>
+			</div>
+			<div class="small-3 columns n-footer__col5">
+				<div class="footer__social">
+					<ul>
+						<li class="footer__social--fb"><a href="#">Facebook</a></li>
+						<li class="footer__social--vk"><a href="#">Вконтакте</a></li>
+						<li class="footer__social--tw"><a href="#">Twitter</a></li>
+						<li class="footer__social--in"><a href="#">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="n-footer__bottom">
+            <div class="row">
+                <span>Чрезмерное употребление алкоголя вредит вашему здоровью</span>
+            </div>
+        </div>
+	</div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="bower_components/slick.js/slick/slick.min.js"></script>
+<script src="bower_components/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+<script src="bower_components/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="bower_components/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
