@@ -1,0 +1,1354 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="fonts/MyriadPro/MyriadPro.css">
+	<link rel="stylesheet" href="css/foundation-custom.css">
+	<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css">
+	<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.css">
+	<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.skinHTML5.css">
+	<link rel="stylesheet" href="bower_components/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="bower_components/magnific-popup/magnific-popup.min.css">
+	<link rel="stylesheet" href="bower_components/magnific-popup/animations.css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+
+<div id="mobile-indicator"></div>
+<div id="medium-indicator"></div>
+
+<div class="page">
+
+	<div class="header">
+		<div class="contain-to-grid contain-to-grid--mod">
+		    <div class="header__search header__search--mod header__search--mob">
+               <form action="">
+                   <input type="text">
+                   <button>
+                       Найти
+                   </button>
+               </form>
+            </div>
+			<nav class="top-bar" data-topbar data-options="custom_back_text: false;" role="navigation">
+				<ul class="title-area title-area--mod">
+					<li class="name">
+						<h1>
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+						</h1>
+					</li>
+					<li class="toggle-topbar menu-icon">
+						<a href="#">
+							<span></span>
+						</a>
+					</li>
+				</ul>
+				<div class="header__search header__search--mod">
+					<form action="">
+						<input type="text" placeholder="Поиск">
+						<button>
+							Найти
+						</button>
+					</form>
+				</div>
+				<section class="top-bar-section top-bar-section--mod">
+					<ul class="right">
+						<li>
+							<a href="#" class="n-header-bold"><span>Компания</span></a>
+						</li>
+						<li><a href="#" class="n-header-bold">Ацкии</a></li>
+						<li>
+							<a href="#" class="n-header-bold"><span>Вино</span></a>
+						</li>
+						<li><a href="#" class="n-header-bold">Игристые вина</a></li>
+						<li><a href="#" class="n-header-bold">Крепкий алкоголь</a></li>
+						<li><a href="#" class="n-header-bold">Вода</a></li>
+						<li class="n-header__cab">
+						    <div class="n-header__cab__container">
+						        <span class="n-header__cab__hello">Привет,</span>
+						        <span class="n-header__cab__name">Василий</span>
+						        <div class="n-header__cab__bttn">
+						            <span>выход</span>
+						        </div>
+						    </div>
+						</li>
+						<li class="n-header__bucket"><a href="#">
+						    <span>80 шт</span>
+						</a></li>
+					</ul>
+				</section>
+			</nav>
+		</div>
+	</div>
+
+	<div class="content">
+
+<div class="row n-main n-main--mod">
+
+    <div class="n-main__filter">
+
+        <div class="n-main__filter__wrap">
+
+            <div class="n-main__filter__container">
+
+                <div class="n-main__filter__close">
+                    <a></a>
+                </div>
+
+                <div class="n-main__filter__block n-main__filter__block--padding">
+                    <div class="n-main__filter__block__field">
+                        <div class="n-main__filter__block__field__box">
+                            <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                        </div>
+                        <span>В наличии на складе</span>
+                    </div>
+                </div>
+                <!-- /.n-main__filter__block -->
+
+                <div class="n-main__filter__block">
+
+                    <div class="n-main__filter__block__header"><span>Цена</span></div>
+
+                    <div class="n-main__filter__block__range">
+
+                        <div class="n-main__filter__block__range__slider">
+                            <input type="text" class="ioslider">
+                        </div>
+
+                    </div>
+
+                    <div class="n-main__filter__block__range__vals">
+
+                        <div class="n-main__filter__block__range__vals__field">
+                            <div class="n-main__filter__block__range__vals__field__row">
+                                <span>от</span>
+                            </div>
+                            <div class="n-main__filter__block__range__vals__field__row">
+                                <input type="text" id="filter-before" value="0" class="txtboxToFilter">
+                            </div>
+                        </div>
+
+                        <div class="n-main__filter__block__range__vals__line"> </div>
+
+                        <div class="n-main__filter__block__range__vals__field">
+                            <div class="n-main__filter__block__range__vals__field__row">
+                                <span>до</span>
+                            </div>
+                            <div class="n-main__filter__block__range__vals__field__row">
+                                <input type="text" id="filter-after" value="800" class="txtboxToFilter">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.n-main__filter__block -->
+
+                <div class="n-main__filter__block">
+
+                    <div class="n-main__filter__block__calc">
+                        <a href="#">Банкетный калькулятор</a>
+                    </div>
+
+                </div>
+                <!-- /.n-main__filter__block -->
+
+                <div class="n-main__filter__left">
+
+                    <div class="n-main__filter__block">
+
+                        <div class="n-main__filter__block__header">
+                            <span>Цвет</span>
+                        </div>
+
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Красное вино</span>
+                            <a class="n-main__filter__block__select" href="#">
+                                <span>подобрать</span>
+                            </a>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Белое вино</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Розовое вино</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-main__filter__block -->
+
+                    <div class="n-main__filter__block">
+
+                        <div class="n-main__filter__block__header">
+                            <span>Цвет</span>
+                        </div>
+
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Игристое</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Тихое</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Крепленое</span>
+                        </div>
+
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Игристое</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Тихое</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Крепленое</span>
+                        </div>
+
+                        <div class="n-main__filter__block__more">
+                            <p></p>
+                            <span>еще варианты</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-main__filter__block -->
+
+                    <div class="n-main__filter__block">
+
+                        <div class="n-main__filter__block__header">
+                            <span>Страна</span>
+                        </div>
+
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Австралия</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Австрия</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Аргентина</span>
+                        </div>
+
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Венгрия</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Гайана</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Германия</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Грузия</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Испания</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Германия</span>
+                        </div>
+                         <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Германия</span>
+                        </div>
+
+                        <div class="n-main__filter__block__more">
+                            <p></p>
+                            <span>еще варианты</span>
+                        </div>
+
+                        <div class="n-main__filter__block__reg">
+                            <span>Регион</span>
+                        </div>
+
+                        <div class="n-main__filter__block__reg n-main__filter__block--subreg">
+                            <span>Субрегион</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-main__filter__block -->
+
+                    <div class="n-main__filter__block">
+
+                        <div class="n-main__filter__block__header">
+                            <span>Сорта</span>
+                        </div>
+
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Бордосский купаж</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Каберне соваиньон</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Мерло</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Шардоне</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Совиньон блан</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Прино гриджо</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Мерло</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Мерло</span>
+                        </div>
+
+                        <div class="n-main__filter__block__more">
+                            <p></p>
+                            <span>еще варианты</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-main__filter__block -->
+
+                    <div class="n-main__filter__block">
+
+                        <div class="n-main__filter__block__header">
+                            <span>Год</span>
+                        </div>
+
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>2015</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>2014</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>2013</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>2012</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>2011</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>2010</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>2009</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>2008</span>
+                        </div>
+
+                        <div class="n-main__filter__block__more">
+                            <p></p>
+                            <span>еще варианты</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-main__filter__block -->
+
+                    <div class="n-main__filter__block">
+
+                        <div class="n-main__filter__block__header">
+                            <span>Вино "по случаю"</span>
+                        </div>
+
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>К пасхе</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Для мальчишника</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Романтический ужин</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>На новый год</span>
+                        </div>
+
+                        <div class="n-main__filter__block__more">
+                            <p></p>
+                            <span>еще варианты</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-main__filter__block -->
+
+                </div>
+                <!-- /.n-main__filter__left -->
+
+                <div class="n-main__filter__right">
+
+                    <div class="n-main__filter__block">
+
+                        <div class="n-main__filter__block__header">
+                            <span>Рейтинги</span>
+                        </div>
+
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>вариант 1</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>вариант 2</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>вариант 3</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>вариант 4</span>
+                        </div>
+
+                        <div class="n-main__filter__block__more">
+                            <p></p>
+                            <span>еще варианты</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-main__filter__block -->
+
+                    <div class="n-main__filter__block">
+
+                        <div class="n-main__filter__block__header">
+                            <span>Сочетание с едой</span>
+                        </div>
+
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>К рыбе</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>К мясу</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>К птице</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>вариант </span>
+                        </div>
+
+                        <div class="n-main__filter__block__more">
+                            <p></p>
+                            <span>еще варианты</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-main__filter__block -->
+
+                    <div class="n-main__filter__block">
+
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Спецпредложения</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Новинки</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Наборы</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Продукты в подарочной
+                            упаковке</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-main__filter__block -->
+
+                    <div class="n-main__filter__block">
+
+                        <div class="n-main__filter__block__header">
+                            <span>Тип вина</span>
+                        </div>
+
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Сухое / брют</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Полусухое</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>Полусладкое</span>
+                        </div>
+                        <div class="n-main__filter__block__field one-of n-main__filter__block__field--toggle">
+                            <div class="n-main__filter__block__field__box">
+                                <label class="n-main__filter__check"><input type="checkbox"><div></div></label>
+                            </div>
+                            <span>вариант</span>
+                        </div>
+
+                        <div class="n-main__filter__block__more">
+                            <p></p>
+                            <span>еще варианты</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-main__filter__block -->
+
+                </div>
+                <!-- /.n-main__filter__right -->
+
+            </div>
+            <!-- /.n-main__filter__container -->
+
+        </div>
+        <!-- /.n-main__filter__wrap -->
+
+    </div>
+    <!-- /.n-main__filter -->
+
+    <div class="n-main__catalog">
+
+        <div class="n-main__catalog__container">
+
+            <a class="n-main__catalog__pdfbutton n-main__catalog__pdfbutton--hide n-main__catalog__pdfbutton--hide2" href="#">
+                <span>Сохранить страницу</span>
+            </a>
+
+            <div class="n-main__cart">
+
+                <div class="n-main__cart__container">
+
+                    <div class="n-main__cart__item">
+                        <div class="n-main__cart__item__pic">
+                            <img src="img/tmp/vine5.png" alt="" />
+                        </div>
+                        <div class="n-main__cart__item__cost">
+                            <span>Цена:  1 375<span class="price"> &#8381;</span></span>
+                        </div>
+                        <a href="#" class="n-main__cart__item__bttn1 n-main__cart__item__bttn1--mobile">
+                            <span>Быстрая покупка</span>
+                        </a>
+                        <a href="#" class="n-main__cart__item__bttn2 n-main__cart__item__bttn2--mobile">
+                            <span>В корзину</span>
+                            <div class="n-main__cart__item__bttn2__col">
+                                <b>1 шт</b>
+                            </div>
+                        </a>
+
+                        <div class="n-main__catalog__items__item__buy n-main__catalog__items__item__buy--mobile">
+                            <div class="n-main__catalog__items__item__buy__button-b">
+                                <a href="#">Быстрая покупка</a>
+                            </div>
+                            <div class="n-main__catalog__items__item__buy__count">
+                                <a class="n-main__catalog__items__item__buy__count__bucket" href="#">
+
+                                </a>
+                                <div class="n-main__catalog__items__item__buy__count__field">
+                                    <span>8 шт</span>
+                                </div>
+                                <div class="n-main__catalog__items__item__buy__count__ok">
+                                    <a href="#">Ок</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="n-main__aside__mag n-main__aside__mag--mobile">Интернет-магазин:</div>
+                        <div class="n-main__catalog__items__item__stat n-main__catalog__items__item__stat--mobile n-main__catalog__items__item__stat--ready">
+                            <span>есть в наличии</span>
+                        </div>
+                    </div>
+                    <!-- /.n-main__cart__item -->
+
+                    <div class="n-main__cart__info">
+
+                        <div class="n-main__cart__info__left">
+
+                            <div class="n-main__cart__info__name">Vizcarra Senda del oro</div>
+                            <a class="n-main__cart__info__post" href="#">Bodegas Vizcarra</a>
+                            <div class="n-main__cart__info__city">
+                                <span>Австрия  /  Терменрегион</span>
+                            </div>
+
+                        </div>
+                        <!-- /.n-main__cart__info__left -->
+                        <div class="n-main__cart__info__values">
+                            <div class="n-main__cart__info__values__val">
+                                <div class="n-main__cart__info__values__val__tabs">
+                                    <div class="n-main__cart__info__values__val__tabs__pic">
+                                        <img src="img/vol1.png" alt="" />
+                                    </div>
+                                    <span>750мл</span>
+                                </div>
+                            </div>
+                            <div class="n-main__cart__info__values__val">
+                                <div class="n-main__cart__info__values__val__tabs">
+                                    <div class="n-main__cart__info__values__val__tabs__pic">
+                                        <img src="img/vol2.png" alt="" />
+                                    </div>
+                                    <span>13 % об</span>
+                                </div>
+                            </div>
+                            <div class="n-main__cart__info__values__val">
+                                <div class="n-main__cart__info__values__val__tabs">
+                                    <div class="n-main__cart__info__values__val__tabs__pic">
+                                        <img src="img/cal.png" alt="" />
+                                    </div>
+                                    <span>2005 г.</span>
+                                </div>
+                            </div>
+                            <div class="n-main__cart__info__values__val">
+                                <div class="n-main__cart__info__values__val__tabs">
+                                    <div class="n-main__cart__info__values__val__tabs__pic">
+                                        <img src="img/fruit.png" alt="" />
+                                    </div>
+                                    <span>Мальбек</span>
+                                </div>
+                            </div>
+                            <div class="n-main__cart__info__values__val">
+                                <div class="n-main__cart__info__values__val__tabs">
+                                    <div class="n-main__cart__info__values__val__tabs__pic">
+                                        <img src="img/deg.png" alt="" />
+                                    </div>
+                                    <span>16-18 °C</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.n-main__cart__info__values -->
+
+                        <div class="n-main__aside n-main__aside--mobile">
+
+                            <a class="n-main__catalog__pdfbutton n-main__catalog__pdfbutton--t" href="#">
+                                <span>Сохранить карточку товара</span>
+                            </a>
+
+                            <div class="n-main__aside__mag">Интернет-магазин:</div>
+                            <div class="n-main__catalog__items__item__stat n-main__catalog__items__item__stat--ready">
+                                <span>есть в наличии</span>
+                            </div>
+
+                            <div class="n-main__aside__vals">
+
+                                <div class="n-main__aside__vals__val">
+                                    <div class="n-main__aside__vals__val__pic">
+                                        <img src="img/pic2.png" alt="" />
+                                    </div>
+
+                                    <span>
+                                        <ul>
+                                            <li><a href="#">Мясо жаренное</a></li>
+                                            <li><a href="#">Пернатая дичь</a></li>
+                                            <li><a href="#">Паста</a></li>
+                                            <li><a href="#">Грибы</a></li>
+                                        </ul>
+                                    </span>
+                                </div>
+
+                                <div class="n-main__aside__vals__val">
+                                    <div class="n-main__aside__vals__val__pic">
+                                        <img src="img/pic4.png" alt="" />
+                                    </div>
+
+                                    <span>
+                                        <ul>
+                                            <li><a href="#">Выбор редкции >95</a></li>
+                                        </ul>
+                                    </span>
+                                </div>
+
+                            </div>
+                            <!-- /.n-main__aside__vals -->
+
+                             <div class="n-main__sidebar__manager">
+
+                                <div class="n-main__sidebar__manager__left">
+
+                                    <div class="n-main__sidebar__manager__present">
+                                        <div class="n-main__sidebar__manager__present__pic">
+                                            <img src="img/tmp/manager.png" alt="#" />
+                                        </div>
+                                        <div class="n-main__sidebar__manager__present__data">
+                                            <a href="#">сменить менеджера</a>
+                                            <p>ваш персональный менеджер</p>
+                                            <h3>Елена</h3>
+                                            <div class="status">
+                                                <span>Online</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.n-main__sidebar__manager__present -->
+
+                                    <div class="n-main__sidebar__manager__contacts">
+                                        <span><b>Телефон:</b> +7 (495) 775-14-14</span>
+                                        <span><b>Добавочный:</b> 987</span>
+                                        <span><b>E-mail:</b> fort@fortltd.ru</span>
+                                    </div>
+
+                                </div>
+                                <!-- /.n-main__sidebar__manager__left -->
+
+                                <div class="n-main__sidebar__manager__right">
+
+                                    <form>
+                                        <textarea placeholder="введите сообщение"></textarea>
+                                        <div class="n-main__sidebar__manager__button">
+                                            <span><p>Отправить</p></span>
+                                            <input type="submit">
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <!-- /.n-main__sidebar__manager__right -->
+
+                            </div>
+                            <!-- /.n-main__sidebar__manager -->
+
+                        </div>
+                        <!-- /.n-main__aside -->
+
+                        <div class="n-main__cart__info__wr">
+
+                            <div class="n-main__cart__info__write">
+
+                                <div class="n-main__cart__info__write__pic">
+                                    <img src="img/pic1.png" alt="" />
+                                </div>
+
+                                <div class="n-main__cart__info__write__text">
+                                    <div class="n-main__cart__info__write__text__header">
+                                        Описание:
+                                    </div>
+                                    <span>
+                                        «Цвет Ronco dei Sassi искристый и почти прозрачный.
+                                        С точки зрения аромата оно тонкое и многогранное, с нотками минералов,
+                                        крыжовника и цветов в сочетании с листиком помидора, тмином, шалфеем и, наконец, с боярышником.
+                                        Вкус интересный, свежий, долго сохраняющийся, а послевкусие – убедительное и чистое». Фернандо Пардини.
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- /.n-main__cart__info__write -->
+                            <div class="n-main__cart__info__write">
+
+                                <div class="n-main__cart__info__write__pic">
+                                    <img src="img/pic2.png" alt="" />
+                                </div>
+
+                                <div class="n-main__cart__info__write__text">
+                                    <div class="n-main__cart__info__write__text__header">
+                                        Описание:
+                                    </div>
+                                    <span>
+                                        Это свежее вино послужит прекрасным дополнением к рыбным закускам,
+                                        ризотто с лёгкими приправами, крем-супам и блюдам из белого мяса.
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- /.n-main__cart__info__write -->
+                            <div class="n-main__cart__info__write">
+
+                                <div class="n-main__cart__info__write__pic">
+                                    <img src="img/pic3.png" alt="" />
+                                </div>
+
+                                <div class="n-main__cart__info__write__text">
+                                    <div class="n-main__cart__info__write__text__header">
+                                        Описание:
+                                    </div>
+                                    <span>
+                                        <ul>
+                                        	<li>Duemilavini. Il Libro Guida ai Vini d'Italia 2006</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- /.n-main__cart__info__write -->
+
+                        </div>
+                        <!-- /.n-main__cart__info__wr -->
+
+                    </div>
+                    <!-- /.n-main__cart__info -->
+
+                </div>
+                <!-- /.n-main__cart__container -->
+
+            </div>
+            <!-- /.n-main__cart -->
+
+            <div class="n-main__aside">
+
+                <a class="n-main__catalog__pdfbutton n-main__catalog__pdfbutton--t" href="#">
+                    <span>Сохранить карточку товара</span>
+                </a>
+
+                <div class="n-main__aside__mag">Интернет-магазин:</div>
+                <div class="n-main__catalog__items__item__stat n-main__catalog__items__item__stat--ready">
+                    <span>есть в наличии</span>
+                </div>
+
+                <div class="n-main__aside__vals">
+
+                    <div class="n-main__aside__vals__val">
+                        <div class="n-main__aside__vals__val__pic">
+                            <img src="img/pic2.png" alt="" />
+                        </div>
+
+                        <span>
+                            <ul>
+                            	<li><a href="#">Мясо жаренное</a></li>
+                            	<li><a href="#">Пернатая дичь</a></li>
+                            	<li><a href="#">Паста</a></li>
+                            	<li><a href="#">Грибы</a></li>
+                            </ul>
+                        </span>
+                    </div>
+
+                    <div class="n-main__aside__vals__val">
+                        <div class="n-main__aside__vals__val__pic">
+                            <img src="img/pic4.png" alt="" />
+                        </div>
+
+                        <span>
+                            <ul>
+                                <li><a href="#">Выбор редкции >95</a></li>
+                            </ul>
+                        </span>
+                    </div>
+
+                </div>
+                <!-- /.n-main__aside__vals -->
+
+                 <div class="n-main__sidebar__manager">
+
+                    <div class="n-main__sidebar__manager__left">
+
+                        <div class="n-main__sidebar__manager__present">
+                            <div class="n-main__sidebar__manager__present__pic">
+                                <img src="img/tmp/manager.png" alt="#" />
+                            </div>
+                            <div class="n-main__sidebar__manager__present__data">
+                                <a href="#">сменить менеджера</a>
+                                <p>ваш персональный менеджер</p>
+                                <h3>Елена</h3>
+                                <div class="status">
+                                    <span>Online</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.n-main__sidebar__manager__present -->
+
+                        <div class="n-main__sidebar__manager__contacts">
+                            <span><b>Телефон:</b> +7 (495) 775-14-14</span>
+                            <span><b>Добавочный:</b> 987</span>
+                            <span><b>E-mail:</b> fort@fortltd.ru</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-main__sidebar__manager__left -->
+
+                    <div class="n-main__sidebar__manager__right">
+
+                        <form>
+                            <textarea placeholder="введите сообщение"></textarea>
+                            <div class="n-main__sidebar__manager__button">
+                                <span><p>Отправить</p></span>
+                                <input type="submit">
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- /.n-main__sidebar__manager__right -->
+
+                </div>
+                <!-- /.n-main__sidebar__manager -->
+
+            </div>
+            <!-- /.n-main__aside -->
+
+            <div class="n-main__bottom">
+
+                <div class="n-main__bottom__header">
+                    <span>Узнайте больше об этом вине:</span>
+                </div>
+
+                <ul>
+                	<li><a href="#" class="n-main__bottom__red">Сайт производителя: http://www.darenberg.com.au/</a></li>
+                	<li><a href="#">Способы укупорки — «за» и «против» (пробка, пластик, винт, стекло)</a></li>
+                	<li><a href="#">Вино как часть национальной культуры</a></li>
+                	<li><a href="#">Основные принципы сочетания вин и блюд</a></li>
+                	<li><a href="#">Способы укупорки — «за» и «против» (пробка, пластик, винт, стекло)</a></li>
+                	<li><a href="#">Вино как часть национальной культуры</a></li>
+                	<li><a href="#">Основные принципы сочетания вин и блюд</a></li>
+                </ul>
+
+            </div>
+            <!-- /.n-main__bottom -->
+
+            <div class="n-main__bottom__header n-main__bottom__header--mod n-main__bottom__red ">
+                Так же вам могут понравиться следующие вина:
+            </div>
+
+            <div class="n-main__catalog__items">
+
+                <div class="n-main__catalog__filter__col n-main__catalog__filter__col--filter6 n-main__catalog__filter__col--filter6--mod" id="n-filter"><a href="#"><span>фильтр</span></a></div>
+
+                <div class="n-main__catalog__items__container">
+
+                    <div class="n-main__catalog__items__item">
+
+                        <div class="n-main__catalog__items__item__container">
+
+                            <div class="n-main__catalog__items__item__pic">
+                                <img src="img/tmp/vine1.png" alt="#" />
+                            </div>
+
+                            <div class="n-main__catalog__items__item__first-block">
+
+                                <div class="n-main__catalog__items__item__name">
+                                    <span>Vizcarra Senda del oro</span>
+                                </div>
+                                <div class="n-main__catalog__items__item__post">
+                                    <a href="#">Bodegas Vizcarra</a>
+                                </div>
+                                <div class="n-main__catalog__items__item__city">
+                                    <span>Австрия  /  Терменрегион </span>
+                                </div>
+
+                            </div>
+                            <!-- /.n-main__catalog__items__item__first-block -->
+
+                            <div class="n-main__catalog__items__item__second-block">
+
+                                <div class="n-main__catalog__items__item__second-block__container">
+
+                                    <div class="n-main__catalog__items__item__vol">
+                                        <b><img src="img/vol1.png" alt="#" /><span>750мл</span></b>
+                                        <b><img src="img/vol2.png" alt="#" /><span>13 % об.</span></b>
+                                    </div>
+
+                                    <div class="n-main__catalog__items__item__fruit">
+                                        <img src="img/fruit.png" alt="#" />
+                                        <span>Мальбек</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- /.n-main__catalog__items__item__second-block -->
+
+                            <div class="n-main__catalog__items__item__third-block">
+
+                                <div class="n-main__catalog__items__item__href">
+                                    <a href="#">подробности</a>
+                                </div>
+
+                                <div class="n-main__catalog__items__item__cost">
+                                    <span>1 375 <span class="price"> &#8381;</span></span>
+                                </div>
+
+                            </div>
+                            <!-- /.n-main__catalog__items__item__third-block -->
+
+                            <div class="n-main__catalog__items__item__fouth-block">
+
+                                <div class="n-main__catalog__items__item__stat n-main__catalog__items__item__stat--ready">
+                                    <span>есть в наличии</span>
+                                </div>
+
+                                <div class="n-main__catalog__items__item__buy">
+                                    <div class="n-main__catalog__items__item__buy__button-b">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                    <div class="n-main__catalog__items__item__buy__count">
+                                        <a class="n-main__catalog__items__item__buy__count__bucket" href="#">
+
+                                        </a>
+                                        <div class="n-main__catalog__items__item__buy__count__field">
+                                            <span>8 шт</span>
+                                        </div>
+                                        <div class="n-main__catalog__items__item__buy__count__ok">
+                                            <a href="#">Ок</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /.n-main__catalog__items__item__fouth-block -->
+
+                        </div>
+                        <!-- /.n-main__catalog__items__item__container -->
+
+                    </div>
+                    <!-- /.n-main__catalog__items__item -->
+
+                    <div class="n-main__catalog__items__item">
+
+                        <div class="n-main__catalog__items__item__container">
+
+                            <div class="n-main__catalog__items__item__pic">
+                                <img src="img/tmp/vine2.png" alt="#" />
+                            </div>
+
+                            <div class="n-main__catalog__items__item__first-block">
+
+                                <div class="n-main__catalog__items__item__name">
+                                    <span>Bodegas El Nido El Nido</span>
+                                </div>
+                                <div class="n-main__catalog__items__item__post">
+                                    <a href="#">Bodegas Vizcarra</a>
+                                </div>
+                                <div class="n-main__catalog__items__item__city">
+                                    <span>Австрия  /  Терменрегион </span>
+                                </div>
+
+                            </div>
+
+                            <div class="n-main__catalog__items__item__second-block">
+
+                                <div class="n-main__catalog__items__item__second-block__container">
+
+                                    <div class="n-main__catalog__items__item__vol">
+                                        <b><img src="img/vol1.png" alt="#" /><span>750мл</span></b>
+                                        <b><img src="img/vol2.png" alt="#" /><span>13 % об.</span></b>
+                                    </div>
+
+                                    <div class="n-main__catalog__items__item__fruit">
+                                        <img src="img/fruit.png" alt="#" />
+                                        <span>Мальбек</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="n-main__catalog__items__item__third-block">
+
+                                <div class="n-main__catalog__items__item__href">
+                                    <a href="#">подробности</a>
+                                </div>
+
+                                <div class="n-main__catalog__items__item__cost">
+                                    <span>14 375 <span class="price"> &#8381;</span></span>
+                                </div>
+
+                            </div>
+
+                            <div class="n-main__catalog__items__item__fouth-block">
+
+                                <div class="n-main__catalog__items__item__stat n-main__catalog__items__item__stat--last">
+                                    <span>последний ящик</span>
+                                </div>
+
+                                <div class="n-main__catalog__items__item__buy">
+                                    <div class="n-main__catalog__items__item__buy__button-b">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                    <div class="n-main__catalog__items__item__buy__bucket">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- /.n-main__catalog__items__item__container -->
+
+                    </div>
+                    <!-- /.n-main__catalog__items__item -->
+
+                    <div class="n-main__catalog__items__item">
+
+                        <div class="n-main__catalog__items__item__container">
+
+                            <div class="n-main__catalog__items__item__pic">
+                                <img src="img/tmp/vine3.png" alt="#" />
+                            </div>
+
+                            <div class="n-main__catalog__items__item__first-block">
+
+                                <div class="n-main__catalog__items__item__name">
+                                    <span>Vizcarra Senda del oro</span>
+                                </div>
+                                <div class="n-main__catalog__items__item__post">
+                                    <a href="#">Bodegas Vizcarra</a>
+                                </div>
+                                <div class="n-main__catalog__items__item__city">
+                                    <span>Австрия  /  Терменрегион </span>
+                                </div>
+
+                            </div>
+
+                            <div class="n-main__catalog__items__item__second-block">
+
+                                <div class="n-main__catalog__items__item__second-block__container">
+
+                                    <div class="n-main__catalog__items__item__vol">
+                                        <b><img src="img/vol1.png" alt="#" /><span>750мл</span></b>
+                                        <b><img src="img/vol2.png" alt="#" /><span>13 % об.</span></b>
+                                    </div>
+
+                                    <div class="n-main__catalog__items__item__fruit">
+                                        <img src="img/fruit.png" alt="#" />
+                                        <span>Мальбек</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="n-main__catalog__items__item__third-block">
+
+                                <div class="n-main__catalog__items__item__href">
+                                    <a href="#">подробности</a>
+                                </div>
+
+                                <div class="n-main__catalog__items__item__cost">
+                                    <span>875 <span class="price"> &#8381;</span></span>
+                                </div>
+
+                            </div>
+
+                            <div class="n-main__catalog__items__item__fouth-block">
+
+                                <div class="n-main__catalog__items__item__stat n-main__catalog__items__item__stat--end">
+                                    <span>товар закончился</span>
+                                </div>
+
+                                <div class="n-main__catalog__items__item__buy">
+                                    <div class="n-main__catalog__items__item__buy__preorder">
+                                        <a href="#">Предзаказ</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- /.n-main__catalog__items__item__container -->
+
+                    </div>
+                    <!-- /.n-main__catalog__items__item -->
+
+                </div>
+                <!-- /.n-main__catalog__items__container -->
+
+            </div>
+
+
+            <div class="n-main__banner">
+               <img src="img/tmp/banner.png" alt="">
+            </div>
+
+        </div>
+        <!-- /.n-main__wrap__container -->
+
+    </div>
+    <!-- /.n-main__catalog -->
+
+</div>
+
+	</div>
+
+	<div class="footer">
+		<div class="row">
+			<div class="small-4 medium-2 columns n-footer__col1">
+				<div class="footer__logo">
+					<a href="#">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="small-2 columns show-for-large-up n-footer__col2">
+				Виноторговая <br>
+				компания <br>
+				«Форт»
+			</div>
+			<div class="small-8 medium-7 large-3 columns n-footer__col3">
+				<span class="icon icon--address n-footer__col3__icon"></span> 115230 Москва, Варшавское шоссе, д. 36, корп. 1 <br>
+				<span class="icon icon--phone n-footer__col3__icon"></span> +7 495 775 14 14 <br>
+				<span class="icon icon--email n-footer__col3__icon"></span> <a href="mailto:fort@fortltd.ru">fort@fortltd.ru</a>
+			</div>
+			<div class="small-2 columns show-for-large-up n-footer__col4">
+				<a href="#">Контакты</a><br>
+				<a href="#">Схемы проезда</a><br>
+				<a href="#">Юридическая информация</a>
+			</div>
+			<div class="small-3 columns n-footer__col5">
+				<div class="footer__social">
+					<ul>
+						<li class="footer__social--fb"><a href="#">Facebook</a></li>
+						<li class="footer__social--vk"><a href="#">Вконтакте</a></li>
+						<li class="footer__social--tw"><a href="#">Twitter</a></li>
+						<li class="footer__social--in"><a href="#">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="n-footer__bottom">
+            <div class="row">
+                <span>Чрезмерное употребление алкоголя вредит вашему здоровью</span>
+            </div>
+        </div>
+	</div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="bower_components/slick.js/slick/slick.min.js"></script>
+<script src="bower_components/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+<script src="bower_components/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="bower_components/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
