@@ -213,6 +213,30 @@ $(document).ready(function() {
         },500);
     }
 
+    if ($('#n-pop-up-calc').length) {
+
+        setTimeout(function(){
+           $.magnificPopup.open({
+                items: {
+                    src: '#n-pop-up-calc'
+                },
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+                closeMarkup: '',
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-slide-bottom'
+            });
+        },500);
+    }
+
     document.body.onclick = function(e) {
         e = e || window.event;
         var target = e.target || e.srcElement;
