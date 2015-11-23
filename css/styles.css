@@ -290,6 +290,46 @@
         font-weight: bold;
         color: #fff;
         line-height: 50px; }
+  .n-pop-up-order--mod2 {
+    width: auto;
+    max-width: 456px; }
+    .n-pop-up-order--mod2__text h5 {
+      font-size: 16px;
+      color: #333333;
+      margin: 15px 0px; }
+      .n-pop-up-order--mod2__text h5 a {
+        color: #8d0d0b; }
+    .n-pop-up-order--mod2__text span {
+      font-size: 14px;
+      line-height: 17px;
+      display: block; }
+    .n-pop-up-order--mod2__list {
+      margin: 0px -15px; }
+      .n-pop-up-order--mod2__list__header {
+        color: #333333;
+        font-size: 22px;
+        padding-left: 55px;
+        position: relative;
+        margin-top: 25px;
+        padding-top: 20px;
+        border-top: 1px solid #d7d7d7;
+        margin-bottom: 22px; }
+        .n-pop-up-order--mod2__list__header::before {
+          display: block;
+          content: '';
+          width: 30px;
+          height: 25px;
+          background: url("../img/book.png");
+          position: absolute;
+          left: 15px;
+          top: 20px; }
+      .n-pop-up-order--mod2__list ul {
+        padding: 0px 15px; }
+        .n-pop-up-order--mod2__list ul li {
+          margin-bottom: 10px; }
+          .n-pop-up-order--mod2__list ul li a {
+            font-size: 16px;
+            text-decoration: underline; }
 
 body {
   background: #fff;
