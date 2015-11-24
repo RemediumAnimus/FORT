@@ -115,7 +115,105 @@ $font-grot: 'NatGroteskLightRegular_31868', Verdana, sans-serif;
       background: darken($red,5%);
     }
   }
+
+  &--mod {
+
+  }//mod
 }//n-pop-up-done
+
+.n-pop-up-done--mod {
+   width: 300px;
+   background: #f4f4f4;
+   border-radius: 10px;
+   margin: 0px auto;
+
+   .n-pop-up-done__container {
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: left;
+    }
+    h3 {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    &__field {
+      position: relative;
+    }
+
+    &__forget {
+      position: absolute;
+      right: 0;
+      top: 2px;
+      color: #333333;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+    label {
+      font-size: 18px;
+      color: #333333;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    input {
+      height: 30px;
+      display: block;
+      border: 1px solid #d5d1ca;
+      font-size: 14px;
+      color: #333333;
+    }
+
+    &__bottom {
+      border-top: 1px solid #d4d4d4;
+      margin: 0px -15px;
+      padding: 10px 15px 0px 15px;
+
+      &--mod {
+        border: 0;
+
+        input[type="submit"] {
+          width: 134px !important;
+          height: 45px !important;
+          margin-top: -15px;
+        }
+      }
+      &:after {
+        display: block;
+        content: '';
+        clear: both;
+      }
+    }
+
+    &__reg {
+      float: left;
+      font-size: 18px;
+      color: $red;
+      text-decoration: underline;
+      margin-top: 10px;
+      display: block;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    input[type="submit"] {
+      float: right;
+      width: 132px;
+      height: 42px;
+      background: $red;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background: darken($red,5%);
+      }
+    }
+}
 
 .n-close {
   position: absolute;
