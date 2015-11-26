@@ -3669,6 +3669,12 @@ h1 {
               text-align: center; }
               .n-main__catalog__filter__col--filter6--mod a span {
                 display: block; }
+      .n-main__catalog__filter .active span {
+        color: #8d0d0b !important; }
+      .n-main__catalog__filter .toggleFilter1 span:after {
+        background: url("../img/filter5.png"); }
+      .n-main__catalog__filter .toggleFilter2 span:after {
+        background: url("../img/filter6.png"); }
     .n-main__catalog__items {
       overflow: hidden; }
       .n-main__catalog__items:after {
@@ -5049,7 +5055,8 @@ h1 {
         display: table;
         width: 100%;
         margin-bottom: 10px;
-        position: relative; }
+        position: relative;
+        padding-right: 30px; }
         @media all and (min-width: 1140px) {
           .n-main__wrap__bucket__wrap__row {
             margin-bottom: 20px; } }
@@ -5061,6 +5068,18 @@ h1 {
         @media all and (min-width: 1140px) {
           .n-main__wrap__bucket__wrap__cell {
             font-size: 18px; } }
+        .n-main__wrap__bucket__wrap__cell__close {
+          width: 28px;
+          height: 28px;
+          background: url("../img/close2.png");
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          right: 0;
+          cursor: pointer; }
+          .n-main__wrap__bucket__wrap__cell__close:hover {
+            background: url("../img/close2.png") 0px -28px; }
         .n-main__wrap__bucket__wrap__cell--first {
           width: 24%;
           padding-right: 30px;

@@ -4529,7 +4529,30 @@ h1 {
             }
           }
         }//filter6
+
       }//col
+      .active {
+        span {
+          color: $red !important;
+        }
+      }
+
+      .toggleFilter1 {
+        span {
+          &:after {
+            background: url("#{$img-path}/filter5.png");
+          }
+        }
+      }
+
+      .toggleFilter2 {
+        span {
+          &:after {
+            background: url("#{$img-path}/filter6.png");
+          }
+        }
+      }
+
     }//filter
 
     &__items {
@@ -6462,6 +6485,7 @@ h1 {
           width: 100%;
           margin-bottom: 10px;
           position: relative;
+          padding-right: 30px;
 
           @media all and (min-width: $medium-width) {
             margin-bottom: 20px;
@@ -6476,6 +6500,22 @@ h1 {
 
           @media all and (min-width: $medium-width) {
             font-size: 18px;
+          }
+
+          &__close {
+            width: 28px;
+            height: 28px;
+            background: url("#{$img-path}/close2.png");
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 0;
+            cursor: pointer;
+
+            &:hover {
+              background: url("#{$img-path}/close2.png") 0px -28px;
+            }
           }
 
           &--first {
