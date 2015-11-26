@@ -261,6 +261,17 @@ $(document).ready(function() {
         },500);
     }
 
+    $('.plus').click(function(){
+        var val = $(this).parent().find('input').prop('value');
+        $(this).parent().find('input').prop('value',++val);
+    });
+    $('.minus').click(function(){
+        var val = $(this).parent().find('input').prop('value');
+        if (val>0) {
+            $(this).parent().find('input').prop('value',--val);
+        }
+    });
+
     document.body.onclick = function(e) {
         e = e || window.event;
         var target = e.target || e.srcElement;

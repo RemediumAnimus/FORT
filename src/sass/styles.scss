@@ -5262,6 +5262,85 @@ h1 {
              display: table;
              text-align: center;
              height: 100%;
+             position: relative;
+
+             .plus {
+                position: absolute;
+                right: -3px;
+                top: 0;
+                width: 15px;
+                height: 50%;
+                background: #dedede;
+                cursor: pointer;
+
+                &:hover {
+                  background: darken(#dedede,5%);
+                }
+
+                &:after {
+                  display: block;
+                  content: '';
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  border-left: 4px solid transparent;
+                  border-right: 4px solid transparent;
+                  border-bottom: 5px solid #333333;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+                  cursor: pointer;
+                }
+             }
+
+             .minus {
+                position: absolute;
+                right: -3px;
+                bottom: 0;
+                width: 15px;
+                height: 50%;
+                background: #dedede;
+                cursor: pointer;
+
+                &:hover {
+                  background: darken(#dedede,5%);
+                }
+
+                &:after {
+                  display: block;
+                  content: '';
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  border-left: 4px solid transparent;
+                  border-right: 4px solid transparent;
+                  border-top: 5px solid #333333;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+                  cursor: pointer;
+                }
+             }
+
+             input {
+               margin: 0;
+               padding: 0;
+               display: block;
+               text-align: center;
+               width: 100%;
+               height: 100%;
+               border: none;
+               font-size: 18px;
+
+               @media all and (min-width: $min-width) {
+                 font-size: 14px;
+                 width: 107%;
+               }
+             }
 
              span {
                width: 100%;
@@ -6448,6 +6527,7 @@ h1 {
           &--third {
             width: 25%;
             text-align: center;
+            position: relative;
 
             @media all and (min-width: $min-width) {
               width: 15%;
@@ -6466,6 +6546,87 @@ h1 {
               @media all and (min-width: $min-width) {
                 position: relative;
               }
+            }
+
+            span {
+
+            }
+
+            input {
+              padding: 0;
+              margin: 0;
+              border: 0;
+              width: 50%;
+              height: 100%;
+              box-shadow: none;
+              font-size: 14px;
+              text-align: center;
+
+              @media all and (min-width: $medium-width) {
+                font-size: 18px;
+              }
+            }
+
+            .plus {
+               position: absolute;
+               right: 50%;
+               top: 0;
+               width: 15px;
+               height: 50%;
+               background: #dedede;
+               cursor: pointer;
+
+               &:hover {
+                 background: darken(#dedede,5%);
+               }
+
+               &:after {
+                 display: block;
+                 content: '';
+                 position: absolute;
+                 width: 0;
+                 height: 0;
+                 border-left: 4px solid transparent;
+                 border-right: 4px solid transparent;
+                 border-bottom: 5px solid #333333;
+                 top: 0;
+                 bottom: 0;
+                 left: 0;
+                 right: 0;
+                 margin: auto;
+                 cursor: pointer;
+               }
+            }
+
+            .minus {
+               position: absolute;
+               right: 50%;
+               bottom: 0;
+               width: 15px;
+               height: 50%;
+               background: #dedede;
+               cursor: pointer;
+
+               &:hover {
+                 background: darken(#dedede,5%);
+               }
+
+               &:after {
+                 display: block;
+                 content: '';
+                 position: absolute;
+                 width: 0;
+                 height: 0;
+                 border-left: 4px solid transparent;
+                 border-right: 4px solid transparent;
+                 border-top: 5px solid #333333;
+                 top: 0;
+                 bottom: 0;
+                 left: 0;
+                 right: 0;
+                 margin: auto;
+                 cursor: pointer;
+               }
             }
           }
 
@@ -7277,6 +7438,15 @@ h1 {
             }
           }
 
+          input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+          }
+
           b {
             font-size: 14px;
             color: #666666;
@@ -7288,6 +7458,68 @@ h1 {
               font-size: 18px;
               line-height: 24px;
             }
+          }
+
+          .plus {
+             position: absolute;
+             right: -3px;
+             top: 0;
+             width: 15px;
+             height: 50%;
+             background: #dedede;
+             cursor: pointer;
+
+             &:hover {
+               background: darken(#dedede,5%);
+             }
+
+             &:after {
+               display: block;
+               content: '';
+               position: absolute;
+               width: 0;
+               height: 0;
+               border-left: 4px solid transparent;
+               border-right: 4px solid transparent;
+               border-bottom: 5px solid #333333;
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 0;
+               margin: auto;
+               cursor: pointer;
+             }
+          }
+
+          .minus {
+             position: absolute;
+             right: -3px;
+             bottom: 0;
+             width: 15px;
+             height: 50%;
+             background: #dedede;
+             cursor: pointer;
+
+             &:hover {
+               background: darken(#dedede,5%);
+             }
+
+             &:after {
+               display: block;
+               content: '';
+               position: absolute;
+               width: 0;
+               height: 0;
+               border-left: 4px solid transparent;
+               border-right: 4px solid transparent;
+               border-top: 5px solid #333333;
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 0;
+               margin: auto;
+               cursor: pointer;
+             }
           }
         }
 
