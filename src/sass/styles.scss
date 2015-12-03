@@ -3927,6 +3927,7 @@ h1 {
 
     &__pag {
       font-size: 16px;
+      margin-bottom: 10px;
 
       &--hide {
         display: none;
@@ -4157,6 +4158,14 @@ h1 {
 
       &--fl {
         float: left;
+      }
+      
+      &--mod {
+        margin-top: 10px;
+        span {
+          font: 48px $font-myriad-cond;
+          text-transform: none;
+        }
       }
     }
 
@@ -8602,6 +8611,80 @@ h1 {
       position: absolute;
       left: 5px;
       top: 3px;
+    }
+  }
+}
+
+.n-action__slider {
+  width: auto;
+  float: none;
+  
+  .slick-list {
+    width: 100%;
+  }
+  
+  img {
+    width: 100%;
+  }
+}
+
+.n-main__actions2 {
+  overflow: hidden;
+  margin-bottom: 20px;
+  
+  &__action {
+    
+  }
+  
+  &__header {
+    margin-top: 20px;
+    a {
+      text-decoration: none;
+      font: 26px $font-myriad-cond;
+      
+      @media all and (min-width:$max-width) {
+        font: 30px $font-myriad-cond;
+      }
+    }
+  }
+  
+  &__text {
+    span {
+      display: block;
+      font-size: 20px;
+      color: #333333;
+      margin-bottom: 5px;
+      font-weight: 600;
+      
+      @media all and (min-width:$max-width) {
+        font-size: 24px;
+      }
+    }
+  }
+  
+  &__subtext {
+    font-size: 16px;
+    height: 120px;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+  &__l {
+    float: none;
+    width: auto;
+    
+    @media all and (min-width:$min-width) {
+      float: left;
+      width: 48%;
+    }
+  }
+  
+  &__r {
+    float: none;
+    width: auto;
+    
+    @media all and (min-width:$min-width) {
+      float: right;
+      width: 48%;
     }
   }
 }

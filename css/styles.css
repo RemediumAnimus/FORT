@@ -3239,7 +3239,8 @@ h1 {
       .n-main__catalog {
         margin: 0px -325px 0px auto; } }
     .n-main__catalog__pag {
-      font-size: 16px; }
+      font-size: 16px;
+      margin-bottom: 10px; }
       .n-main__catalog__pag--hide {
         display: none; }
         @media all and (min-width: 500px) {
@@ -3409,6 +3410,11 @@ h1 {
           font-size: 30px; } }
       .n-main__catalog__header--fl {
         float: left; }
+      .n-main__catalog__header--mod {
+        margin-top: 10px; }
+        .n-main__catalog__header--mod span {
+          font: 48px "MyriadProCondRegular";
+          text-transform: none; }
     .n-main__catalog__remain {
       clear: both;
       padding: 20px 0px 20px 0px; }
@@ -6602,3 +6608,51 @@ h1 {
       position: absolute;
       left: 5px;
       top: 3px; }
+
+.n-action__slider {
+  width: auto;
+  float: none; }
+  .n-action__slider .slick-list {
+    width: 100%; }
+  .n-action__slider img {
+    width: 100%; }
+
+.n-main__actions2 {
+  overflow: hidden;
+  margin-bottom: 20px; }
+  .n-main__actions2__header {
+    margin-top: 20px; }
+    .n-main__actions2__header a {
+      text-decoration: none;
+      font: 26px "MyriadProCondRegular"; }
+      @media all and (min-width: 1260px) {
+        .n-main__actions2__header a {
+          font: 30px "MyriadProCondRegular"; } }
+  .n-main__actions2__text span {
+    display: block;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 5px;
+    font-weight: 600; }
+    @media all and (min-width: 1260px) {
+      .n-main__actions2__text span {
+        font-size: 24px; } }
+  .n-main__actions2__subtext {
+    font-size: 16px;
+    height: 120px;
+    overflow: hidden;
+    margin-top: 15px; }
+  .n-main__actions2__l {
+    float: none;
+    width: auto; }
+    @media all and (min-width: 500px) {
+      .n-main__actions2__l {
+        float: left;
+        width: 48%; } }
+  .n-main__actions2__r {
+    float: none;
+    width: auto; }
+    @media all and (min-width: 500px) {
+      .n-main__actions2__r {
+        float: right;
+        width: 48%; } }
