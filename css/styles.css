@@ -6642,6 +6642,10 @@ h1 {
     @media all and (min-width: 1260px) {
       .n-main__actions2__text span {
         font-size: 24px; } }
+  .n-main__actions2__text--mod {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 40px; }
   .n-main__actions2__subtext {
     font-size: 16px;
     height: 120px;
@@ -6684,3 +6688,9 @@ h1 {
   .n-main__sel .active {
     color: #8d0d0b;
     text-decoration: none; }
+
+.n-actions__detail {
+  margin-top: 45px; }
+  @media all and (min-width: 770px) {
+    .n-actions__detail {
+      margin-top: 0; } }

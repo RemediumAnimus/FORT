@@ -8668,6 +8668,12 @@ h1 {
         font-size: 24px;
       }
     }
+    
+    &--mod {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      margin-left: 40px;
+    }
   }
   
   &__subtext {
@@ -8728,5 +8734,12 @@ h1 {
   .active {
     color: $red;
     text-decoration: none;
+  }
+}
+
+.n-actions__detail {
+  margin-top: 45px;
+  @media all and (min-width:$mobile-width) {
+    margin-top: 0;
   }
 }
