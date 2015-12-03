@@ -6383,9 +6383,9 @@ h1 {
         .n-actions__right__contacts__b__cell:first-child:before {
           display: block;
           content: '';
-          width: 17px;
-          height: 24px;
-          background: url("../img/mark2.png");
+          width: 15px;
+          height: 26px;
+          background: url("../img/tie.png");
           position: absolute;
           left: 0;
           top: 0; }
