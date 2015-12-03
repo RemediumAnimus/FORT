@@ -23,6 +23,9 @@
 .clear {
   clear: both; }
 
+.row {
+  position: relative; }
+
 #mobile-indicator {
   display: block; }
   @media all and (min-width: 770px) {
@@ -2722,6 +2725,8 @@ h1 {
       display: block;
       content: "";
       clear: both; }
+    .n-main__filter--mod {
+      margin-top: 40px; }
     .n-main__filter__close {
       position: absolute;
       width: 20px;
@@ -6656,3 +6661,26 @@ h1 {
       .n-main__actions2__r {
         float: right;
         width: 48%; } }
+
+.n-main__sel {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  width: 215px; }
+  @media all and (min-width: 1140px) {
+    .n-main__sel {
+      width: 294px; } }
+  .n-main__sel a {
+    font-size: 18px;
+    display: block;
+    color: #bebebe; }
+    @media all and (min-width: 1140px) {
+      .n-main__sel a {
+        font-size: 24px; } }
+    .n-main__sel a:first-child {
+      float: left; }
+    .n-main__sel a:last-child {
+      float: right; }
+  .n-main__sel .active {
+    color: #8d0d0b;
+    text-decoration: none; }

@@ -57,6 +57,10 @@ $font-grot: 'NatGroteskLightRegular_31868', Verdana, sans-serif;
   clear: both;
 }
 
+.row {
+  position: relative;
+}
+
 #mobile-indicator {
   display: block;
   @media all and (min-width: $mobile-width) {
@@ -3240,6 +3244,10 @@ h1 {
 
     &:after {
       @include clear;
+    }
+    
+    &--mod {
+      margin-top: 40px;
     }
 
     &__close {
@@ -8686,5 +8694,39 @@ h1 {
       float: right;
       width: 48%;
     }
+  }
+}
+
+.n-main__sel {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  width: 215px;
+  
+  @media all and (min-width:$medium-width) {
+    width: 294px;
+  }
+  
+  a {
+    font-size: 18px;
+    display: block;
+    color: #bebebe;
+    
+    @media all and (min-width:$medium-width) {
+      font-size: 24px;
+    }
+    
+    &:first-child {
+      float: left;
+    }
+    
+    &:last-child {
+      float: right;
+    }
+  }
+  
+  .active {
+    color: $red;
+    text-decoration: none;
   }
 }
