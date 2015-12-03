@@ -8176,7 +8176,7 @@ h1 {
     &__r {
       float: left;
       
-      @media all and (min-width:$mobile-width) {
+      @media all and (min-width:$min-width) {
         float: right;
       }
       span {

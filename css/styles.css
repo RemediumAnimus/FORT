@@ -6292,7 +6292,7 @@ h1 {
     padding: 0; }
   .n-actions__right__contacts__r {
     float: left; }
-    @media all and (min-width: 770px) {
+    @media all and (min-width: 500px) {
       .n-actions__right__contacts__r {
         float: right; } }
     .n-actions__right__contacts__r span {
