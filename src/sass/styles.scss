@@ -8456,10 +8456,12 @@ h1 {
 .n-actions__left {
   float: none;
   width: auto;
+  margin-top: 20px;
   
   @media all and (min-width:$max-width) {
     float: left;
     width: 21%;
+    margin-top: 0;
   }
   
   &__block {

@@ -6491,11 +6491,13 @@ h1 {
 
 .n-actions__left {
   float: none;
-  width: auto; }
+  width: auto;
+  margin-top: 20px; }
   @media all and (min-width: 1260px) {
     .n-actions__left {
       float: left;
-      width: 21%; } }
+      width: 21%;
+      margin-top: 0; } }
   .n-actions__left__block {
     border-bottom: 1px solid #8d0d0b;
     padding-bottom: 20px;
